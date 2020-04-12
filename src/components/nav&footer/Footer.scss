@@ -2,13 +2,7 @@
 @import "../styles/mixins.scss";
 
 .footer-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
+  @include bookendBody;
   background-color: $darkTheme;
   color: $lightTheme;
-  width: 100%;
-  height: 70px;
-  padding: 10px;
 }
