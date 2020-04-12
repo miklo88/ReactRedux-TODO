@@ -12,20 +12,20 @@ export default function MainContent() {
       <AddTodo />
       <div className='todo-category-container'>
         <h1>Show:</h1>
-        <FilterLink className='todo-button' filter={VisibilityFilters.SHOW_ALL}>
-          All
+        <FilterLink className='filter-link' filter={VisibilityFilters.SHOW_ALL}>
+          <h1>All</h1>
         </FilterLink>
         <FilterLink
-          className='todo-button'
+          className='filter-link'
           filter={VisibilityFilters.SHOW_ACTIVE}
         >
-          Active
+          <h1> Active</h1>
         </FilterLink>
         <FilterLink
-          className='todo-button'
+          className='filter-link'
           filter={VisibilityFilters.SHOW_COMPLETED}
         >
-          Completed
+          <h1> Completed</h1>
         </FilterLink>
       </div>
     </div>

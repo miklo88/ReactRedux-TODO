@@ -1,0 +1,46 @@
+@import "./variables.scss";
+
+//////////////////////Media Breakpoints START
+$breakpoints: (
+  "mobile": 450px,
+  "tablet": 800px,
+  "desktop": 1000px,
+  "large": 1200px,
+) !default;
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "no value could be retrieved from `#{$breakpoint}`. "+"Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+//////////////////////// Button Styling
+/// signup/login forms "submit" button as example. with hover and active styles.
+@mixin appButton {
+  font-family: inherit;
+  font-size: 1.6rem;
+  color: $lightTheme;
+  background-color: $darkTheme;
+  border: 1px solid $lightTheme;
+  border-radius: 20px;
+  padding: 10px 30px;
+  margin: 10px;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $lightTheme;
+    color: $darkTheme;
+    border: 1px solid $darkTheme;
+    transition: 0.5s;
+    opacity: 0.9;
+  }
+
+  &:active {
+    background-color: $lightTheme;
+    color: $darkTheme;
+    border: 1px solid $darkTheme;
+  }
+}

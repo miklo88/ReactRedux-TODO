@@ -1,13 +1,12 @@
 @import "../styles/variables.scss";
+@import "../styles/mixins.scss";
 
 .main-content-body {
   display: flex;
   flex-direction: column;
-  min-height: 10vh;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-height: 100%;
   background-color: $lightTheme;
 }
 .Patchy-logo {
@@ -19,18 +18,16 @@
 .todo-category-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
   padding: 20px;
-  .todo-button {
-    padding: 10px 30px;
-    border: 1px solid $darkTheme;
-    color: $lightTheme;
+  margin: auto 10px;
+  h1 {
+    color: $darkTheme;
+  }
+  .filter-link {
     margin: 30px;
-    cursor: pointer;
-    &:hover {
-      color: $darkTheme;
-    }
-    &:active {
-      background-color: $lightTheme;
-    }
   }
 }
