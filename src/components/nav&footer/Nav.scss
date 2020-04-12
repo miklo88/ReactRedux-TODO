@@ -1,13 +1,8 @@
 @import "../styles/variables.scss";
+@import "../styles/mixins.scss";
 
 .nav-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
-  height: 70px;
-  padding: 10px;
+  @include bookendBody;
   background-color: $darkTheme;
   .patchy-nav {
     width: 70px;
