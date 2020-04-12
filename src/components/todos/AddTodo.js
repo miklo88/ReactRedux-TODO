@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { addTodo } from "../../redux/actions";
-
+// ADD TODO component.
 const AddTodo = ({ dispatch }) => {
   let input;
 
@@ -9,7 +9,7 @@ const AddTodo = ({ dispatch }) => {
     <div className='addTodo-container'>
       <form
         className='addTodo-form'
-        onSubmit={e => {
+        onSubmit={(e) => {
           e.preventDefault();
           if (!input.value.trim()) {
             return;
@@ -18,7 +18,7 @@ const AddTodo = ({ dispatch }) => {
           input.value = "";
         }}
       >
-        <input className='addTodo-input' ref={node => (input = node)} />
+        <input className='addTodo-input' ref={(node) => (input = node)} />
         <button className='addTodo-button' type='submit'>
           Add Todo
         </button>
