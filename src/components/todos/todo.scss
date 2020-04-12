@@ -1,0 +1,21 @@
+.todo-container {
+  display: block;
+  background-color: whitesmoke;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  margin: 10px;
+  .todo-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    .input-field {
+      padding: 20px;
+    }
+    .input-text {
+      color: red;
+    }
+  }
+}

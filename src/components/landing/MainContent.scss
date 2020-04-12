@@ -1,0 +1,36 @@
+@import "../styles/variables.scss";
+
+.main-content-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $lightTheme;
+}
+.Patchy-logo {
+  height: 400px;
+  width: auto;
+  background-color: $darkTheme;
+}
+// filter links to show completed, active and all todos
+.todo-category-container {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  .todo-button {
+    padding: 10px 30px;
+    border: 1px solid $darkTheme;
+    color: $lightTheme;
+    margin: 30px;
+    cursor: pointer;
+    &:hover {
+      color: $darkTheme;
+    }
+    &:active {
+      background-color: $lightTheme;
+    }
+  }
+}

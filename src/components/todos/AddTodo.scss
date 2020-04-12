@@ -1,0 +1,11 @@
+@import "../styles/variables.scss";
+
+.addTodo-container {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+
+  display: flex;
+  .addTodo-button {
+    border: 1px solid $darkTheme;
+  }
+}
