@@ -1,6 +1,6 @@
 import React from "react";
+// styles
 import "./App.scss";
-
 // components
 import Nav from "./components/nav&footer/Nav";
 import MainContent from "./components/landing/MainContent";

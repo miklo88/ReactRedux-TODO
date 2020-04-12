@@ -15,8 +15,8 @@ export const toggleTodo = (id) => ({
   type: "TOGGLE_TODO",
   id,
 });
-
-// filter for where added todo can go.
+// filter for where added todo can go. ALL todos COMPLETED todos ACTIVE todos.
+// VisibilityFilter is now going to go to our reducer.
 export const VisibilityFilters = {
   SHOW_ALL: "SHOW_ALL",
   SHOW_COMPLETED: "SHOW_COMPLETED",
