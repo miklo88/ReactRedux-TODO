@@ -1,0 +1,13 @@
+@import "../styles/mixins.scss";
+@import "../styles/variables.scss";
+
+.todoList-Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  .todos-list {
+    color: red;
+  }
+}

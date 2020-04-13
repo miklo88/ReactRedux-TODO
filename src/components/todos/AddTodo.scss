@@ -1,8 +1,25 @@
 @import "../styles/variables.scss";
+@import "../styles/mixins.scss";
 
 .addTodo-container {
-  display: flex;
-  .addTodo-button {
-    border: 1px solid $darkTheme;
+  // margin: auto 10px;
+  .addTodo-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    .addTodo-input {
+      @include inputWebKit;
+      appearance: none;
+      border: none;
+      border: 1px solid $darkTheme;
+      background-color: $lightTheme;
+      padding: 10px;
+    }
+    .addTodo-button {
+      @include appButton;
+      margin: 10px;
+    }
   }
 }
