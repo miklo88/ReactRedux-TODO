@@ -6,11 +6,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100%;
+  height: 100%;
   background-color: $lightTheme;
 }
 .Patchy-logo {
-  height: 400px;
+  height: 200px;
   width: auto;
   background-color: $darkTheme;
 }
@@ -24,10 +24,9 @@
   height: auto;
   padding: 20px;
   margin: auto 10px;
-  h1 {
+  .mainContent-h1 {
+    font-size: 2rem;
     color: $darkTheme;
-  }
-  .filter-link {
-    margin: 30px;
+    padding-right: 10px;
   }
 }

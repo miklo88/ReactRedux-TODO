@@ -1,14 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Todo from "./Todo";
-// import "./TodoList.scss";
+import "./TodoList.scss";
 // List of TODOS component.
 const TodoList = ({ todos, toggleTodo }) => (
-  <ul className='todos-list'>
-    {todos.map((todo) => (
-      <Todo key={todo.id} {...todo} onClick={() => toggleTodo(todo.id)} />
-    ))}
-  </ul>
+  <div className='todoList-container'>
+    <ul className='todos-list'>
+      {todos.map((todo) => (
+        <Todo key={todo.id} {...todo} onClick={() => toggleTodo(todo.id)} />
+      ))}
+    </ul>
+  </div>
 );
 
 TodoList.propTypes = {

@@ -11,21 +11,11 @@ export default function MainContent() {
       <img src={patchy} className='Patchy-logo' alt='patchy-logo' />
       <AddTodo />
       <div className='todo-category-container'>
-        <h1>Show:</h1>
-        <FilterLink className='filter-link' filter={VisibilityFilters.SHOW_ALL}>
-          <h1>All</h1>
-        </FilterLink>
-        <FilterLink
-          className='filter-link'
-          filter={VisibilityFilters.SHOW_ACTIVE}
-        >
-          <h1> Active</h1>
-        </FilterLink>
-        <FilterLink
-          className='filter-link'
-          filter={VisibilityFilters.SHOW_COMPLETED}
-        >
-          <h1> Completed</h1>
+        <h1 className='mainContent-h1'>Show:</h1>
+        <FilterLink filter={VisibilityFilters.SHOW_ALL}>All</FilterLink>
+        <FilterLink filter={VisibilityFilters.SHOW_ACTIVE}>Active</FilterLink>
+        <FilterLink filter={VisibilityFilters.SHOW_COMPLETED}>
+          Completed
         </FilterLink>
       </div>
     </div>

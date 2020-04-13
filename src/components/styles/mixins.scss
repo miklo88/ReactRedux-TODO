@@ -20,7 +20,7 @@ $breakpoints: (
 /// signup/login forms "submit" button as example. with hover and active styles.
 @mixin appButton {
   font-family: inherit;
-  font-size: 1.6rem;
+  font-size: 1rem;
   color: $lightTheme;
   background-color: $darkTheme;
   border: 1px solid $lightTheme;
@@ -32,7 +32,7 @@ $breakpoints: (
     background-color: $lightTheme;
     color: $darkTheme;
     border: 1px solid $darkTheme;
-    transition: 0.5s;
+    transition: 0.5;
     opacity: 0.9;
   }
   &:active {

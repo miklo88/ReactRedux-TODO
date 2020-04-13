@@ -1,0 +1,33 @@
+@import "../styles/mixins.scss";
+@import "../styles/variables.scss";
+
+.link-btn {
+  //   @include appButton;
+  background-color: $lightTheme;
+  border: none;
+  border-bottom: 1px solid $darkTheme;
+  cursor: pointer;
+  padding: 10px 30px;
+  margin: 0 1%;
+  .link-p {
+    color: $darkTheme;
+    font-size: 1rem;
+  }
+  &:hover {
+    background-color: $darkTheme;
+    border-bottom: 1px solid $darkTheme;
+    transition: 0.5;
+    .link-p {
+      color: $lightTheme;
+      font-size: 1rem;
+    }
+  }
+  &:active {
+    background-color: $lightGray;
+    border-bottom: 1px solid $lightGray;
+    .link-p {
+      color: $darkTheme;
+      font-size: 1rem;
+    }
+  }
+}
