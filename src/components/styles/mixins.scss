@@ -41,16 +41,7 @@ $breakpoints: (
     border: 1px solid $lightGray;
   }
 }
-///////////////////////////// Component Body styling.
-// @mixin componentBody {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-evenly;
-//     align-items: center;
-//     width: 100%;
-//     height: auto;
-//     padding: 10px;
-//   }
+
 ///////////////////////////// Nav/Footer styling.
 @mixin bookendBody {
   display: flex;

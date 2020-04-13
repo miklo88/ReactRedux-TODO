@@ -17,7 +17,7 @@
 // filter links to show completed, active and all todos
 .todo-category-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -28,5 +28,9 @@
     font-size: 2rem;
     color: $darkTheme;
     padding-right: 10px;
+  }
+  //media breakpoint
+  @include respond-to("tablet") {
+    flex-direction: row;
   }
 }
