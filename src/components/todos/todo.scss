@@ -10,16 +10,17 @@
   width: 400px;
   margin: 10px;
   .todo {
+    color: $darkTheme;
     width: 75%;
     height: auto;
-    // background-color: red;
     padding: 20px 30px;
+    cursor: pointer;
     .deleteTodo-btn {
       @include appButton;
       border: 1px solid $darkTheme;
       font-size: 0.7rem;
       padding: 5px 7px;
-      margin-left: 10px;
+      margin: 10px;
     }
   }
 }

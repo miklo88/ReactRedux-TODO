@@ -1,0 +1,19 @@
+@import "../styles/variables.scss";
+@import "../styles/mixins.scss";
+
+.deleteTodo-button {
+  border: 1px solid $darkTheme;
+  border-radius: 10px;
+  background-color: $lightTheme;
+  color: $darkTheme;
+  font-size: 0.7rem;
+  padding: 5px 7px;
+  margin: 10px;
+  transition: 0.7;
+  &:hover {
+    border: 1px solid $lightTheme;
+    border-radius: 10px;
+    background-color: $darkTheme;
+    color: $lightTheme;
+  }
+}

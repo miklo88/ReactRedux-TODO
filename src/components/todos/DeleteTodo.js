@@ -1,7 +1,11 @@
 import React from "react";
 import { connect } from "react-redux";
 import { deleteTodo } from "../../redux/actions/";
-import "./Todo.scss";
+import "./DeleteTodo.scss";
+
+const alertMessage = () => {
+  alert("sure about that?");
+};
 
 let DeleteTodo = ({ id, dispatch }) => {
   return (
@@ -12,6 +16,7 @@ let DeleteTodo = ({ id, dispatch }) => {
           e.preventDefault();
           console.log(dispatch(deleteTodo(id)));
           dispatch(deleteTodo(id));
+          alertMessage();
         }}
       >
         Delete
