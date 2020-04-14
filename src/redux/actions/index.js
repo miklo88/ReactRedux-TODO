@@ -5,6 +5,11 @@ export const addTodo = (text) => ({
   id: nextTodoId++,
   text,
 });
+// remove todo
+export const removeTodo = (id) => ({
+  type: "REMOVE_TODO",
+  id,
+});
 // filter for where added todo can go.
 export const setVisibilityFilter = (filter) => ({
   type: "SET_VISIBILITY_FILTER",
@@ -21,5 +26,4 @@ export const VisibilityFilters = {
   SHOW_ALL: "SHOW_ALL",
   SHOW_COMPLETED: "SHOW_COMPLETED",
   SHOW_ACTIVE: "SHOW_ACTIVE",
-  SHOW_REMOVED: "SHOW_REMOVED",
 };
