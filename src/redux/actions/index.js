@@ -10,11 +10,6 @@ export const setVisibilityFilter = (filter) => ({
   type: "SET_VISIBILITY_FILTER",
   filter,
 });
-//deleting a todo from the state
-export const removeTodo = (id) => ({
-  type: "REMOVE_TODO",
-  id,
-});
 // toggling the todo
 export const toggleTodo = (id) => ({
   type: "TOGGLE_TODO",

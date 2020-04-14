@@ -17,7 +17,6 @@ export default function MainContent() {
         <FilterLink filter={VisibilityFilters.SHOW_COMPLETED}>
           Completed
         </FilterLink>
-        <FilterLink filter={VisibilityFilters.SHOW_REMOVED}>Deleted</FilterLink>
       </div>
     </div>
   );
