@@ -8,7 +8,7 @@ export const addTodo = (text) => ({
 // remove todo
 export const deleteTodo = (id) => ({
   type: "DELETE_TODO",
-  id,
+  id: id,
 });
 // filter for where added todo can go.
 export const setVisibilityFilter = (filter) => ({

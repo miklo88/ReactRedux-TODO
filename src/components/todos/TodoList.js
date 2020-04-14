@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Todo from "./Todo";
 import "./TodoList.scss";
 // List of TODOS component.
-const TodoList = ({ todos, toggleTodo, removeTodo }) => (
+const TodoList = ({ todos, toggleTodo }) => (
   <div className='todoList-container'>
     <ul className='todos-list'>
       {todos.map((todo) => (

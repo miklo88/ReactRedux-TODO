@@ -1,24 +1,23 @@
 import React from "react";
 import { connect } from "react-redux";
 import { deleteTodo } from "../../redux/actions/";
+import "./Todo.scss";
 
-let RemoveTodo = ({ dispatch }) => {
+let DeleteTodo = ({ id, dispatch }) => {
   return (
     <div>
       <button
         className='deleteTodo-button'
-        onCLick={(e) => {
+        onClick={(e) => {
           e.preventDefault();
-          console.log(dispatch(deleteTodo()));
+          console.log(dispatch(deleteTodo(id)));
+          dispatch(deleteTodo(id));
         }}
-        type='submit'
       >
-        Done?
+        Delete
       </button>
     </div>
   );
 };
 
-RemoveTodo = connect()(RemoveTodo);
-
-export default RemoveTodo;
+export default connect()(DeleteTodo);

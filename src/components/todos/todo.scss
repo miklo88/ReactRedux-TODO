@@ -14,7 +14,7 @@
     height: auto;
     // background-color: red;
     padding: 20px 30px;
-    .delete-todo-btn {
+    .deleteTodo-btn {
       @include appButton;
       border: 1px solid $darkTheme;
       font-size: 0.7rem;
