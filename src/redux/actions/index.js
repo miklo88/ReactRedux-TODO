@@ -6,8 +6,8 @@ export const addTodo = (text) => ({
   text,
 });
 // remove todo
-export const removeTodo = (id) => ({
-  type: "REMOVE_TODO",
+export const deleteTodo = (id) => ({
+  type: "DELETE_TODO",
   id,
 });
 // filter for where added todo can go.
@@ -24,6 +24,7 @@ export const toggleTodo = (id) => ({
 // VisibilityFilter is now going to go to our reducer.
 export const VisibilityFilters = {
   SHOW_ALL: "SHOW_ALL",
+  DELETED_TODO: "DELETE_TODO",
   SHOW_COMPLETED: "SHOW_COMPLETED",
   SHOW_ACTIVE: "SHOW_ACTIVE",
 };

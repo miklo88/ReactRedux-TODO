@@ -1,10 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./Todo.scss";
+import RemoveTodo from "./DeleteTodo";
 
-const alertMessage = () => {
-  alert("Are you sure?");
-};
+// const alertMessage = () => {
+//   alert("Are you sure?");
+// };
 
 // the TODO where it renders a single todo.
 const Todo = ({ onClick, completed, text }) => (
@@ -17,9 +18,7 @@ const Todo = ({ onClick, completed, text }) => (
       }}
     >
       {text}
-      <button className='delete-todo-btn' onClick={alertMessage()}>
-        delete
-      </button>
+      <RemoveTodo />
     </li>
   </div>
 );
@@ -28,6 +27,7 @@ Todo.propTypes = {
   onClick: PropTypes.func.isRequired,
   completed: PropTypes.bool.isRequired,
   text: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
 };
 
 export default Todo;
