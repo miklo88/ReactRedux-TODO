@@ -4,6 +4,7 @@ import FilterLink from "../todos/filter-link";
 import { VisibilityFilters } from "../../redux/actions/action-creator";
 import AddTodo from "../todos/add-todo";
 import TodoCard from "../todos/todo-card";
+//styles
 import "./main-content.scss";
 
 export default function MainContent() {

@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Todo from "./todo";
+//styles
 import "./todo-list.scss";
 // List of TODOS component.
 const TodoList = ({ todos, toggleTodo }) => (

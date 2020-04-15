@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+//styles
 import "./link.scss";
 // disables ACTIVE TODO's.
 const Link = ({ active, children, onClick }) => (
@@ -13,5 +14,4 @@ Link.propTypes = {
   children: PropTypes.node.isRequired,
   onClick: PropTypes.func.isRequired,
 };
-
 export default Link;

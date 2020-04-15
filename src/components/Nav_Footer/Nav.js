@@ -1,5 +1,6 @@
 import React from "react";
 import patchy from "../../imgs/exclude.png";
+//styles
 import "./nav.scss";
 
 export default function Nav() {

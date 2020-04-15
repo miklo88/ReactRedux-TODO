@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import DeleteTodo from "./delete-todo";
-// styles
+//styles
 import "./todo.scss";
 
 // the TODO where it renders a single todo.

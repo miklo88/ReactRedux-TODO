@@ -3,7 +3,7 @@ import React from "react";
 import Nav from "./components/nav_footer/nav";
 import MainContent from "./components/landing/main-content";
 import Footer from "./components/nav_footer/footer";
-// styles
+//styles
 import "./app.scss";
 
 function App() {
