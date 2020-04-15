@@ -1,7 +1,7 @@
 import { connect } from "react-redux";
-import { toggleTodo } from "../../redux/actions";
+import { toggleTodo } from "../../Redux/Actions/ActionCreator";
 import TodoList from "./TodoList";
-import { VisibilityFilters } from "../../redux/actions";
+import { VisibilityFilters } from "../../Redux/Actions/ActionCreator";
 ///Card rendering TODOS category filters to the client.
 const TodoCard = (todos, filter) => {
   switch (filter) {
