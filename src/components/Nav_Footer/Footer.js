@@ -3,7 +3,11 @@ import React from "react";
 import "./footer.scss";
 
 function Footer() {
-  return <div className='footer-container'>Patchy's Footer.</div>;
+  return (
+    <div className='footer-container'>
+      <p>Patchy's Footer</p>
+    </div>
+  );
 }
 
 export default Footer;
