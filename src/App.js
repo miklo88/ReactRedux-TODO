@@ -4,7 +4,6 @@ import "./App.scss";
 // components
 import Nav from "./components/nav&footer/Nav";
 import MainContent from "./components/landing/MainContent";
-import TodoCard from "./components/todos/TodoCard";
 import Footer from "./components/nav&footer/Footer";
 
 function App() {
@@ -12,7 +11,7 @@ function App() {
     <div className='App'>
       <Nav />
       <MainContent />
-      <TodoCard />
+      {/* <TodoCard /> */}
       <Footer />
     </div>
   );

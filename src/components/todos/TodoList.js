@@ -5,6 +5,8 @@ import "./TodoList.scss";
 // List of TODOS component.
 const TodoList = ({ todos, toggleTodo }) => (
   <div className='todoList-container'>
+    <p className='todo-container-label'>Patchy's Todo List</p>
+
     <ul className='todos-list'>
       {todos.map((todo) => (
         <Todo key={todo.id} {...todo} onClick={() => toggleTodo(todo.id)} />

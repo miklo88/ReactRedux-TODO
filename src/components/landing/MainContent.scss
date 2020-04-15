@@ -7,30 +7,32 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  background-color: $lightTheme;
-}
-.Patchy-logo {
-  height: 200px;
-  width: auto;
-  background-color: $darkTheme;
-}
-// filter links to show completed, active and all todos
-.todo-category-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
-  height: auto;
-  padding: 20px;
-  margin: auto 10px;
-  .mainContent-h1 {
-    font-size: 2rem;
-    color: $darkTheme;
-    padding-right: 10px;
+  background-color: $lightTheme;
+
+  .Patchy-logo {
+    height: 200px;
+    width: auto;
+    background-color: $darkTheme;
   }
-  //media breakpoint
-  @include respond-to("tablet") {
-    flex-direction: row;
+  // filter links to show completed, active and all todos
+  .todo-category-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin: auto 10px;
+    .mainContent-h1 {
+      font-size: 2rem;
+      color: $darkTheme;
+      padding-right: 10px;
+    }
+    //media breakpoint
+    @include respond-to("tablet") {
+      flex-direction: row;
+    }
   }
 }

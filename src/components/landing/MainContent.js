@@ -3,6 +3,7 @@ import patchy from "../../imgs/Exclude.png";
 import FilterLink from "../todos/FilterLink";
 import { VisibilityFilters } from "../../redux/actions";
 import AddTodo from "../todos/AddTodo";
+import TodoCard from "../../components/todos/TodoCard";
 import "./MainContent.scss";
 
 export default function MainContent() {
@@ -17,6 +18,7 @@ export default function MainContent() {
         <FilterLink filter={VisibilityFilters.SHOW_COMPLETED}>
           Completed
         </FilterLink>
+        <TodoCard />
       </div>
     </div>
   );
