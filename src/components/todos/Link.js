@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./Link.scss";
+import "./link.scss";
 // disables ACTIVE TODO's.
 const Link = ({ active, children, onClick }) => (
   <button className='link-btn' onClick={onClick} disables={active}>

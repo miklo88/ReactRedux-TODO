@@ -1,10 +1,10 @@
 import React from "react";
 // components
-import Nav from "./components/nav_footer/Nav";
-import MainContent from "./components/landing/MainContent";
-import Footer from "./components/nav_footer/Footer";
+import Nav from "./components/nav_footer/nav";
+import MainContent from "./components/landing/main-content";
+import Footer from "./components/nav_footer/footer";
 // styles
-import "./App.scss";
+import "./app.scss";
 
 function App() {
   return (

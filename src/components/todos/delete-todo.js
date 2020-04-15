@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
-import { deleteTodo } from "../../redux/actions/ActionCreator";
-import "./DeleteTodo.scss";
+import { deleteTodo } from "../../redux/actions/action-creator";
+import "./delete-todo.scss";
 
 const alertMessage = () => {
   alert("sure about that?");

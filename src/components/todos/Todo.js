@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import DeleteTodo from "./DeleteTodo";
+import DeleteTodo from "./delete-todo";
 // styles
-import "./Todo.scss";
+import "./todo.scss";
 
 // the TODO where it renders a single todo.
 const Todo = ({ id, onClick, completed, text }) => (
