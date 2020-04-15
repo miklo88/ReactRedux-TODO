@@ -3,10 +3,6 @@ import PropTypes from "prop-types";
 import "./Todo.scss";
 import DeleteTodo from "./DeleteTodo";
 
-// const alertMessage = () => {
-//   alert("Are you sure?");
-// };
-
 // the TODO where it renders a single todo.
 const Todo = ({ id, onClick, completed, text }) => (
   <div className='todo-container'>
