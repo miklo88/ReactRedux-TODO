@@ -1,9 +1,9 @@
 import React from "react";
-import patchy from "../../Imgs/Exclude.png";
-import FilterLink from "../Todos/FilterLink";
-import { VisibilityFilters } from "../../Redux/Actions/ActionCreator";
-import AddTodo from "../Todos/AddTodo";
-import TodoCard from "../Todos/TodoCard";
+import patchy from "../../imgs/Exclude.png";
+import FilterLink from "../todos/FilterLink";
+import { VisibilityFilters } from "../../redux/actions/ActionCreator";
+import AddTodo from "../todos/AddTodo";
+import TodoCard from "../todos/TodoCard";
 import "./MainContent.scss";
 
 export default function MainContent() {
